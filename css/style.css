@@ -83,7 +83,7 @@ p a:hover {
 /*------------------------- Body ------------------------*/
 #body {
 	margin:0 auto 97px;
-	min-height:1005px;
+	min-height: auto;
 	padding:38px 29px 0;
 	width:902px;
 }
@@ -196,7 +196,7 @@ p a:hover {
 #body.contact h3 {
 	color:#e49e06;
 	font-family:anticregular;
-	font-size:20px;
+	font-size:25px;
 	font-weight:400;
 	letter-spacing:.05em;
 	margin:11px 0 0;
@@ -503,4 +503,25 @@ div#head{
 
 #drop{
 	padding-top: 50px;
+	cursor: pointer;
+}
+
+#contact h2 {
+  color: #FF6D00;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 1.5em;
+  font-family: Overlock-Regular;
+  text-align: center;
+}
+
+
+#con-left {
+  padding: 2em 0 0;
+}
+
+#head{
+	font-family: monospace;
+    font-size: 28px;
+    color: #FF6D00;
 }
