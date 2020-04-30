@@ -3,8 +3,16 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>MCSS</title>
+	<title>Home - MCSS</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="icon" href="images/Background/logo.jpg" type="image/jpeg" sizes="16x16">
+	<script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+        var y = document.getElementById("dropdown-content");
+        y.classList.toggle("display-dropdown");
+      }
+    </script>
 </head>
 <body>
 	<div id="header">
@@ -26,7 +34,16 @@
 					<a href="contact.html">Contact</a>
 				</li>
 				<li>
-					<img id="drop" src="images/menu.png" width="30" height="30" alt="logo">
+					<div class="drop" onclick="myFunction(this)">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				  </div>
+				  <div id="dropdown-content">
+                    <a class = "menu-link" href="#">Sign In</a>
+                    <a class = "menu-link" href="#">Sign Up</a>
+                  </div>
+</div>
 				</li>
 			</ul>
 			
