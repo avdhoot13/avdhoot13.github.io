@@ -503,7 +503,7 @@ div#title{
 	display: inline-block;
     position: absolute;
     padding-top: 43px;
-    width: 250px;
+    width: 150px;
 }
 
 div#head{
@@ -613,7 +613,7 @@ div#head{
   margin-left: -15px;
 }
 
-.col-md-7, .col-md-5
+.col-md-7, .col-md-5, .col-md-6
 {
 	position: relative;
   min-height: 1px;
@@ -626,7 +626,7 @@ div#head{
   content: " ";
 }
 
-.col-md-7 {
+.col-md-7{
 	width: 58%;
 	float: left;
 }
@@ -646,12 +646,19 @@ div#head{
     border: 0;
 }
 
-.about .container *, .about .container *:before, .about .container *:after {
+.about .container *, .about .container *:before, .about .container *:after, 
+.sign-in .container *, .about .container *:before, .about .container *:after
+.home .container *, .home .container *:before, .home .container *:after,{
 	box-sizing: border-box
 }
 
-.about #body {
-	padding: 38px 29px 433px;
+.about #body{
+	padding: 38px 29px 460px;
+}
+
+.sign-in #body,
+.home #body {
+	padding: 38px 29px 300px;
 }
 
 
@@ -694,6 +701,7 @@ div#head{
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  width: 50px !important;
 }
 
 #dropdown-content a {
@@ -711,4 +719,376 @@ div#head{
 height: 45px !important;
 letter-spacing: 0px;
 line-height: 45px !important;
+}
+
+/*********sign in**************/
+.container{
+	width: 930px;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.login-left{
+	padding: 0;
+}
+
+.login-left p, .login-right p {
+    color: #D50000;
+    display: block;
+    font-size: 1em;
+    margin: 0 0 2em 0;
+    line-height: 1.8em;
+}
+
+.sign-in p{
+	margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.acount-btn {
+    background: #F54785;
+    color: #FFF;
+    font-size: 1em;
+    padding: 0.7em 1.2em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.login-left h3, .login-right h3 {
+    color: #63B8BD;
+    font-size: 1.4em;
+    padding-bottom: 0.5em;
+    font-weight: 700;
+    font-family: Overlock-Regular;
+}
+
+.login-right form {
+    padding: 1em 0;
+}
+
+.login-right form div {
+    padding: 0 0 2em 0;
+}
+
+.login-right span {
+    color: #999;
+    font-size: 0.8125em;
+    padding-bottom: 0.2em;
+    display: block;
+    text-transform: uppercase;
+}
+
+.sign-in label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-right input[type="text"], .login-right input[type="file"] {
+    border: 1px solid #F54785;
+    outline-color: #F54785;
+    width: 96%;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+.login-right input[type="password"] {
+    border: 1px solid #F54785;
+    outline-color: #F54785;
+    width: 96%;
+    font-size: 0.8125em;
+    padding: 0.7em;
+}
+
+.login-right input[type="submit"], .login-right input[type="button"] {
+    background: #F54785;
+    color: #FFF;
+    font-size: 1em;
+    padding: 0.6em 1.2em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    display: inline-block;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+.sign-in .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sign-in li.selected a,
+.sign-up li.selected a,
+.forgot li.selecteda{
+  background: unset !important;
+  color: #787b66 !important;
+  font-size: 12px !important;
+}
+
+.sign-in #head,
+.sign-up #head {
+	padding-top: 15px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.sign-in .col-md-6, .home .col-md-6 {
+	width: 50%;
+	float: left;
+}
+
+.sign-in .col-md-5, .home .col-md-5 {
+	width: 46%;
+	float: left;
+}
+
+.sign-up #body {
+	margin: auto !important;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*:focus {
+  outline: none;
+}
+
+body.sign-up {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.register #login-box {
+  position: relative;
+  margin: 0 auto 35px;
+  width: 600px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.register .left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+}
+
+.register h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+.register input[type="text"],
+.register input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.register input[type="text"]:focus,
+.register input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+.register input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+.register input[type="submit"]:hover,
+.register input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.register input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.register .or {
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #DDD;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 40px;
+  text-align: center;
+}
+
+.register .right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  background: url('https://goo.gl/YbktSj');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 2px 2px 0;
+}
+
+.register .right .loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #FFF;
+  text-align: center;
+}
+
+.register button.social-signin {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.register button.social-signin:hover,
+.register button.social-signin:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+.register button.social-signin:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+.register button.social-signin.facebook {
+  background: #32508E;
+}
+
+.register button.social-signin.twitter {
+  background: #55ACEE;
+}
+
+.register button.social-signin.google {
+  background: #DD4B39;
+}
+
+
+.forgot{
+	position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 930px;
+    margin: auto;
+}
+
+.forgot .login-right input[type="text"], .forgot .login-right input[type="file"]{
+    border: 1px solid #F54785;
+    outline-color: #F54785;
+    width: 200px !important;
+    font-size: 1em;
+    padding: 0.5em;
+}
+a.forgot{
+	text-decoration: none;
+}
+
+.login-page{
+	position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 930px;
+    margin: auto;
+}
+
+.login-page.col-md-6
+{
+	position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.account_grid img {
+    width: 50%;
+}
+
+.login-page .login-right input[type="file"] {
+    border: 1px solid #F54785;
+    outline-color: #F54785;
+    width: 300px !important;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+.home #header div ul li.selected a, .home #header div ul li a:hover
+.viewfiles #header div ul li.selected a, .viewfiles #header div ul li a:hover
+.recived #header div ul li.selected a, .recived #header div ul li a:hover
+.share #header div ul li.selected a, .share #header div ul li a:hover
+.request #header div ul li.selected a, .request #header div ul li a:hover {
+    color: #D50000 !important;
+    font-size: 20px !important;
+}
+.home #header div ul li.selected a, 
+.viewfiles #header div ul li.selected a
+.recived #header div ul li.selected a
+.share #header div ul li.selected a
+.request #header div ul li.selected a {
+    background: url(../images/bg-nav-selected.png) repeat-x !important;
+}
+
+.home .login-left h3, .home .login-right h3 {
+    color: #63B8BD;
+    font-size: 35px;
 }

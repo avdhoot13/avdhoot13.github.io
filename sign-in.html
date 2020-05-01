@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Home - MCSS</title>
+	<title>Sign-in - MCSS</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="icon" href="images/Background/logo.jpg" type="image/jpeg" sizes="16x16">
 	<script>
@@ -14,7 +14,7 @@
       }
     </script>
 </head>
-<body>
+<body class="sign-in">
 	<div id="header">
 		<div>
 			<a href="index.html" id="logo"><img src="images/Background/logo.jpg" width="100" height="100" alt="logo">
@@ -43,50 +43,48 @@
                     <a class = "menu-link" href="sign-in.html">Log In</a>
                     <a class = "menu-link" href="sign-up.html">Register</a>
                   </div>
-</div>
+		</div>
 				</li>
-			</ul>
-			
-					
-				
+			</ul>				
 		</div>
 	</div>
-	<div id="body" class="home">
-		<div id="head">
-					<a href="index.html" style="font-size:48px;text-decoration:none;">Multimedia Content Security System</a>
-				</div>
-		<div class="blog">
-			<img src="images/banner/1.1.jpg" width="450" height="250" class="img-responsive" alt="">
-			<div>
-				<h3>1. MCSS </h3>
-					<p>
-						1) Our Project represents a double stage encryption algorithm that provides the security of multimedia contents such as image, audio and video in the cloud.<br>
-						2) The proposed algorithm is crucial in the second stage. The randomly generated key provides more security than the conventional encryption system. <br>
-						3) The 94-bit converter generates the multimedia contents into the ciphertext. The ciphertext is stored in the cloud instead of original multimedia content. 
-					</p>
-			</div>
-		</div>
-		<div class="article">
-			<div>
-				<h3>2. Random Key Generation</h3>
-				<p>
-					1) The randomly generated key is unknown to the content manager too.<br>
-					2) Without the randomly generated key, the Decryption-I process is difficult and thus the proposed architecture gives efficient security. <br>
-					3) The Encryption-2 and the Decryption-I process is based on the random key generation shown by the origin color in the system server and the client 
-				</p>
-			</div>
-			<img src="images/rkey.jpg" width="350" height="250" alt="">
-		</div>
-		<div class="news">
-			<img src="images/share.png" width="400" height="250" alt="">
-			<div>
-				<h3>3. Sharing Files</h3>
-				<p>
-					1. Share module in Cloud helps in sharing of resources dynamically that comprises of Computation, Storage and Software<br> 2. It helps the user to easily share their file whether it is doc file, image file, pdf file, video file, etc. with those user who are within the cloud.<br>
-				</p>
+	<!-- login -->
+  <div id="body" class="home">
+  	<div id="head">
+		<a href="sign-in.html" style="font-size:48px;text-decoration:none;">Log In</a>
+	</div>
+	<div class="login-page">
+		<div class="container">
+			<div class="account_grid">
+				<div class="col-md-5 login-left wow fadeInLeft" data-wow-delay="0.4s">
+					<h3>NEW CUSTOMERS</h3>
+					<p>Register for this site iv very easy, just fill the details in below link</p>
+					<a class="acount-btn" href="sign-up.html">Create an Account</a>
+			   </div>
+			   <div class="col-md-6 login-right wow fadeInRight" data-wow-delay="0.4s">
+					<h3>REGISTERED CUSTOMERS</h3>
+					<p>If you have an account with us, please log in.</p>
+					<form action="home.html" method="post">
+						<div>
+							<span>Username<label>*</label></span>
+							<input type="text" name="username" required> 
+						</div>
+						<div>
+							<span>Password<label>*</label></span>
+							<input type="password" name="password" required> 
+						</div>
+						<div>
+						  <input class="button" type="submit" value="Login"><br>
+						  <a class="forgot" href="forgot.html">Forgot Your Password?</a>
+                      </div>
+					</form>
+			   </div>	
+				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
+  </div>
+
 	<div id="footer">
 		<div>
 			<p>

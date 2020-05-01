@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Contact - MCSS</title>
+	<title>Sign-up - MCSS</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="icon" href="images/Background/logo.jpg" type="image/jpeg" sizes="16x16">
 	<script>
@@ -14,7 +14,7 @@
       }
     </script>
 </head>
-<body>
+<body class="sign-up">
 	<div id="header">
 		<div>
 			<a href="index.html" id="logo"><img src="images/Background/logo.jpg" width="100" height="100" alt="logo">
@@ -24,13 +24,13 @@
 					</a>
 				</div>
 			<ul>
-				<li>
+				<li class="selected">
 					<a href="index.html">Home</a>
 				</li>
 				<li>
 					<a href="about.html">About</a>
 				</li>
-				<li class="selected">
+				<li>
 					<a href="contact.html">Contact</a>
 				</li>
 				<li>
@@ -43,37 +43,47 @@
                     <a class = "menu-link" href="sign-in.html">Log In</a>
                     <a class = "menu-link" href="sign-up.html">Register</a>
                   </div>
+		</div>
 				</li>
-			</ul>
+			</ul>				
 		</div>
 	</div>
-	<div id="body" id="contact">
-		<div id="contact">
-			<div id="con-left">
-				<div id="head">
-				  <span>College Address</span>
-				</div>						
-					</p>Sector 4, Kharghar</p>    
-					</p>A. C. Patil College</p>
-					</p>Navi Mumbai, Maharashtra 410210</p>
-					</p>Phone: 022 2774 5722</p>
-					</p>Email : <a href="mailto:enquiry@acpce.ac.in">enquiry@acpce.ac.in</a></p>
-			</div>
-			<div id="con-right">
-				<div id="head">
-				  <span>My Address</span>
-				</div>						
-					</p>B8/15, Nav Ekta Society</p>    
-					</p>Kalyan</p>
-					</p>Maharashtra 431301</p>
-					</p>Mobile: 98202554017</p>
-					</p>Email : <a href="mailto:mane.avdhoot13@gmail.com">mane.avdhoot13@gmail.com</a></p>
-			</div>
-			<div class="col-md-6 contact-left">
-				<iframe src="https://www.google.com/maps/d/u/0/embed?mid=11mNzouBA2g8w3PoA5zW2-1n2bSnQ7ErZ" width="930" height="550"></iframe>
-			</div>
-		</div>
+	<!-- login -->
+  <div id="body" class="home">
+  	<div id="head">
+		<a href="sign-in.html" style="font-size:48px;text-decoration:none;">Register</a>
 	</div>
+</div>
+
+<!-- copy paste -->
+<div class = "register">
+ <div id="login-box">
+  <div class="left">
+    <h1>Sign up</h1>
+    
+    <input type="text" name="username" placeholder="Username" />
+    <input type="text" name="email" placeholder="E-mail" />
+    <input type="password" name="password" placeholder="Password" />
+    <input type="password" name="password2" placeholder="Retype password" />
+    
+    <input type="submit" name="signup_submit" value="Sign me up" />
+  </div>
+  
+  <div class="right">
+    <span class="loginwith">Sign in with<br />social network</span>
+    
+    <button class="social-signin facebook">Log in with facebook</button>
+    <button class="social-signin twitter">Log in with Twitter</button>
+    <button class="social-signin google">Log in with Google+</button>
+  </div>
+  <div class="or">OR</div>
+</div>
+</div>
+</body>
+
+
+
+<!-- footer -->
 	<div id="footer">
 		<div>
 			<p>
